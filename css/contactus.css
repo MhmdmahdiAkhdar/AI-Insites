@@ -1,0 +1,247 @@
+#cont {
+    text-align: center;
+    font-size: 50px;
+    margin: 1em 0;
+}
+
+#maincont {
+    margin-bottom: 3%;
+}
+
+#left {
+    float: left;
+    width: 45%;
+    margin: 0 2.5%;
+}
+
+small {
+    color: red;
+    font-size: x-large;
+}
+
+#right {
+    float: right;
+    width: 45%;
+    margin: 0 2.5%;
+}
+
+#btw {
+    overflow: hidden;
+}
+
+.dives {
+    margin: 0 auto;
+    margin-bottom: 2em;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+#im1 {
+    width: 100px;
+    height: auto;
+    float: left;
+    cursor: pointer;
+}
+
+.bim {
+    font-size: x-large;
+    font-weight: bolder;
+    padding-top: 0;
+    margin-left: 0;
+}
+
+#location {
+    color: black;
+}
+
+#location:hover {
+    color: blue;
+}
+
+.fieldss {
+    margin: 5%;
+    border: 1px solid #bbb;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 5px;
+}
+
+label {
+    margin-left: 7%;
+    margin-right: 5%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#inp1 {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.submit-container {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 100%;
+    font-weight: bolder;
+}
+
+#bot1 {
+    padding: 10px 20px;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+#bot1:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+textarea {
+    font-size: 100%;
+    letter-spacing: 1px;
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    box-shadow: 1px 1px 1px black;
+    margin: 0 auto;
+    display: block;
+}
+
+select {
+    font-size: 100%;
+    border-radius: 20%;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+
+    #left,
+    #right {
+        float: none;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .dives {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #inp1 {
+        margin: 0;
+        width: 100%;
+    }
+
+    legend {
+        text-align: center;
+    }
+
+    select {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1920px) {
+    #feedbackForm {
+        margin-bottom: 4em;
+    }
+
+    .submit-container {
+        margin-top: 4em;
+    }
+
+    #rating {
+        margin-left: 10em;
+    }
+
+    #selectionn {
+        margin-left: 7em;
+        margin-top: 1em;
+    }
+
+    .fulemail {
+        margin-left: 8em;
+    }
+
+    #maincont {
+        margin-left: 4em;
+    }
+
+    .fullmail {
+        width: 250px;
+        height: 30px;
+    }
+}
+
+#rating {
+    margin: 20px 0;
+    padding: 10px;
+    max-width: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#rating legend {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#selectionn {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    appearance: none;
+    cursor: pointer;
+}
+
+#selectionn:hover,
+#selectionn:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+#rating small {
+    color: #ff6347;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+#rating legend {
+    font-size: 1rem;
+
+    font-weight: normal;
+    padding: 8px 12px;
+
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 6em;
+
+}

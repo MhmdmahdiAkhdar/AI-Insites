@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css//contactus.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../index.html"><img class="nav-logo" src="../images/logo.png" alt="AI logo image"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link"><img class="nav-star" src="../images/star.png">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><img class="nav-star" src="../images/star.png">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><img class="nav-star" src="../images/star.png">Contact Us</a>
+                </li>
+            </ul>
+            <div class="menu-open-close">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 id="cont">Contact Us</h1>
+        <div class="dives">
+            <img id="im1" src="../images/mail2.png">
+            <p class="bim">202310795@ua.edu.lb<br>202312054@ua.edu.lb</p>
+        </div>
+
+
+        <div class="dives">
+            <img id="im1" src="../images/call2.png">
+            <p class="bim">+96181868134<br>+96171236166</p>
+        </div>
+
+        <div class="dives">
+            <img id="im1" src="../images/location2.png">
+            <p class="bim"><a id="location" target="_blank" href="https://maps.app.goo.gl/QjBVpXsCzjiJzng38">Antonine
+                    University-Hadat/Baabda Campus</a>
+            </p>
+        </div>
+
+        <form id="feedbackForm">
+            <div class="btw">
+                <div id="left">
+                    <div class="fulemail">
+                        <h3>Full Name<small> *</small></h3>
+                        <input class="fullmail" type="text" id="name" placeholder="Ahmad Assaf" required>
+                        <label for="name" aria-required=""></label>
+                    </div>
+
+                    <div class="fulemail">
+                        <h3>Email<small> *</small></h3>
+                        <input class="fullmail" type="email" id="email" placeholder="example@gmail.com" required>
+                        <label for="name"></label>
+                    </div>
+                </div>
+
+                <div id="right">
+                    <h3 id="maincont">Feedback<small> *</small></h3>
+                    <textarea id="inp1" name="inp1" placeholder="Tell us more about your experience... " rows="5"
+                        cols="33" required></textarea>
+                </div>
+            </div>
+
+            <div id="rating">
+                <legend>Rate your experience with our website<small> *</small></legend>
+                <select id="selectionn" required>
+                    <option value="0" aria-required="">0%</option>
+                    <option value="0">25%</option>
+                    <option value="0">50%</option>
+                    <option value="0">75%</option>
+                    <option value="0">100%</option>
+                </select>
+            </div>
+
+
+            <div class="submit-container">
+                <input id="bot1" type="submit" value="Submit">
+            </div>
+
+        </form>
+
+    </main>
+    <footer>
+        <h3 class="footer-t">&copy; AI Acadimy</h3>
+        <a href="../index.html"><img class="logo" src="../images/logo.png" alt="Artifial intelligence logo"></a>
+        <a href="./terms.html" class="footer-p">Terms of Service</a>
+    </footer>
+</body>
+<script src="../scripts/script.js"></script>
+
+</html>
