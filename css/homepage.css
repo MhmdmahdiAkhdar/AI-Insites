@@ -1,6 +1,5 @@
-.hero-section {
+.section1 {
     background: url('../images/img5.jpg') no-repeat center center/cover;
-    /* Use the new background image */
     height: 90vh;
     display: flex;
     align-items: center;
@@ -9,7 +8,7 @@
     color: #fff;
 }
 
-.hero-content {
+.contentt {
     background: rgba(0, 0, 0, 0.5);
     /* Semi-transparent black overlay */
     padding: 2em;
@@ -17,7 +16,7 @@
     max-width: 80%;
 }
 
-.hero-heading {
+.headingg {
     font-size: 3em;
     font-weight: bold;
     margin-bottom: 0.5em;
@@ -26,13 +25,13 @@
 }
 
 
-.hero-subheading {
+.subheading {
     font-size: 1.5em;
     margin-bottom: 1em;
     opacity: 0.8;
 }
 
-.hero-button {
+.buttonn {
     font-size: 1.2em;
     color: white;
     background-color: #007BFF;
@@ -42,11 +41,10 @@
     transition: background-color 0.3s;
 }
 
-.hero-button:hover {
+.buttonn:hover {
     background-color: #0056b3;
 }
 
-/* About AI Section Styling */
 .about-ai {
     display: flex;
     align-items: center;
@@ -86,7 +84,6 @@
     margin-left: 1em;
 }
 
-/* Core Areas Section Styling */
 .core-areas {
     text-align: center;
     padding: 4em 2em;
