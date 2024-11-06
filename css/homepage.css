@@ -1,0 +1,149 @@
+.hero-section {
+    background: url('../images/img5.jpg') no-repeat center center/cover;
+    /* Use the new background image */
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black overlay */
+    padding: 2em;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.hero-heading {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    opacity: 0.9;
+    /* Slight transparency for the text */
+}
+
+
+.hero-subheading {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    opacity: 0.8;
+}
+
+.hero-button {
+    font-size: 1.2em;
+    color: white;
+    background-color: #007BFF;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #0056b3;
+}
+
+/* About AI Section Styling */
+.about-ai {
+    display: flex;
+    align-items: center;
+    padding: 4em 2em;
+    background: #f4f4f4;
+}
+
+.about-content {
+    width: 50%;
+    padding: 1em;
+}
+
+.about-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+.learn-more {
+    font-size: 1em;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+}
+
+.about-image {
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 1em;
+}
+
+/* Core Areas Section Styling */
+.core-areas {
+    text-align: center;
+    padding: 4em 2em;
+    background-color: #fff;
+}
+
+.core-areas h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.core-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.core-card {
+    width: 30%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 1em;
+    transition: transform 0.3s;
+}
+
+.core-card:hover {
+    transform: translateY(-10px);
+}
+
+.core-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #007BFF;
+}
+
+.core-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 1em 0;
+}
+
+.core-card p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+.core-button {
+    font-size: 1em;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.core-button:hover {
+    text-decoration: underline;
+}

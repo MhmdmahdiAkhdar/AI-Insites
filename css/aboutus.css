@@ -1,0 +1,53 @@
+.content-card {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+/* Alternating background color for cards */
+.content-card:nth-child(odd) {
+    background: linear-gradient(to right, #f9f9f9, #e0e0e0);
+}
+
+.content-card:nth-child(even) {
+    background: linear-gradient(to right, #e0e0e0, #f9f9f9);
+}
+
+/* Image Styling for About Us Sections */
+.img-section {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+}
+
+.content-card:hover .img-section {
+    transform: scale(1.05);
+}
+
+/* Text Container for About Us Content */
+.text-container {
+    width: 60%;
+}
+
+/* Heading and Paragraph Styling */
+.section-heading {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.section-paragraph {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 10px;
+}
