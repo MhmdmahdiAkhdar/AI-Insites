@@ -235,7 +235,7 @@
     }
 
     .buttonn {
-        font-size: 1em;
+        font-size: 0.9em;
         padding: 0.5em 1em;
     }
 
@@ -256,6 +256,12 @@
     }
 }
 
+@media screen and (max-width: 290px){
+    .buttonn {
+        font-size: 0.7em;
+        padding: 0.4em 0.8em;
+    }
+}
 
 @media screen and (max-width: 240px) {
     .headingg {
@@ -267,8 +273,8 @@
     }
 
     .buttonn {
-        font-size: 0.8em;
-        padding: 0.4em 0.8em;
+        font-size: 0.6em;
+        padding: 0.3em 0.7em;
     }
 
     .about-content h2 {
