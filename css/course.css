@@ -1,0 +1,141 @@
+.sidebar {
+    position: fixed;
+    top: 100px;
+    /* Start the sidebar just below the header */
+    left: 0;
+    width: 250px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: calc(100vh - 100px - 60px);
+    /* Full height minus the header and footer heights */
+    overflow-y: auto;
+    z-index: 100;
+    border-radius: 15px;
+    /* Added rounded corners */
+}
+
+/* Button for each chapter */
+.sidebar-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    /* Rounded corners for the button */
+}
+
+.sidebar-btn:hover {
+    background-color: #0099cc;
+    /* Light blue hover */
+}
+
+/* Chapter list styling */
+.chapter-list {
+    display: none;
+    margin-top: 10px;
+}
+
+.chapter-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.chapter-list ul li {
+    padding: 5px 0;
+}
+
+.chapter-list ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.chapter-list ul li a:hover {
+    color: lightblue;
+    /* Light blue color for chapter list hover */
+}
+
+/* Main content adjustment */
+.content {
+    margin-left: 260px;
+    /* To push content to the right so it's not overlapped by the sidebar */
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    border-top: 2px solid #D3D3D3;
+    padding: 0 2em;
+    background-color: #000;
+    color: white;
+    box-shadow: 0 0 0.2em 0.1em;
+    flex-shrink: 0;
+    position: relative;
+}
+
+footer .logo {
+    width: 4em;
+    height: 4em;
+    cursor: pointer;
+}
+
+footer a {
+    color: white;
+}
+
+footer .footer-t,
+footer .footer-p {
+    font-family: Monospace;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: gray;
+}
+
+footer .footer-t,
+footer .footer-p,
+footer .logo {
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Responsive media query for smaller screens */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .menu-open-close {
+        display: block;
+    }
+
+    .sidebar-btn {
+        font-size: 1.5rem;
+    }
+
+    .menu-open-close.active {
+        display: block;
+    }
+
+    .menu-open-close.active+.sidebar {
+        display: flex;
+    }
+}
