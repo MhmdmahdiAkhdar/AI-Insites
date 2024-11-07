@@ -1,3 +1,4 @@
+// This code help in the menu for small screens 
 const menuopenclose = document.querySelector(".menu-open-close");
 const navmenu = document.querySelector(".nav-menu");
 const navbar = document.querySelector(".navbar"); // Assuming your navbar has a class of 'navbar'

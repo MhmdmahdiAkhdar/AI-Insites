@@ -1,6 +1,5 @@
 .hero-section {
     background: url('../images/img5.jpg') no-repeat center center/cover;
-    /* Use the new background image */
     height: 90vh;
     display: flex;
     align-items: center;
@@ -11,7 +10,6 @@
 
 .hero-content {
     background: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent black overlay */
     padding: 2em;
     border-radius: 8px;
     max-width: 80%;
@@ -22,9 +20,7 @@
     font-weight: bold;
     margin-bottom: 0.5em;
     opacity: 0.9;
-    /* Slight transparency for the text */
 }
-
 
 .hero-subheading {
     font-size: 1.5em;
@@ -46,7 +42,6 @@
     background-color: #0056b3;
 }
 
-/* About AI Section Styling */
 .about-ai {
     display: flex;
     align-items: center;
@@ -86,7 +81,6 @@
     margin-left: 1em;
 }
 
-/* Core Areas Section Styling */
 .core-areas {
     text-align: center;
     padding: 4em 2em;
@@ -146,4 +140,167 @@
 
 .core-button:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-heading {
+        font-size: 2.5em;
+    }
+
+    .hero-subheading {
+        font-size: 1.2em;
+    }
+
+    .hero-button {
+        font-size: 1em;
+        padding: 0.6em 1.2em;
+    }
+
+    .about-content h2 {
+        font-size: 2em;
+    }
+
+    .about-content p {
+        font-size: 1em;
+    }
+
+    .core-card {
+        width: 45%;
+    }
+
+    .core-card h3 {
+        font-size: 1.2em;
+    }
+
+    .core-card p {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        height: 70vh;
+    }
+
+    .hero-heading {
+        font-size: 2em;
+    }
+
+    .hero-subheading {
+        font-size: 1em;
+    }
+
+    .hero-button {
+        font-size: 0.9em;
+        padding: 0.5em 1em;
+    }
+
+    .about-ai {
+        flex-direction: column;
+        padding: 2em 1em;
+    }
+
+    .about-content {
+        width: 100%;
+        padding: 0.5em;
+    }
+
+    .about-image {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    .core-cards {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .core-card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-heading {
+        font-size: 1.8em;
+    }
+
+    .hero-subheading {
+        font-size: 1em;
+    }
+
+    .hero-button {
+        font-size: 1em;
+        padding: 0.5em 1em;
+    }
+
+    .about-content h2 {
+        font-size: 1.8em;
+    }
+
+    .about-content p {
+        font-size: 1em;
+    }
+
+    .core-card h3 {
+        font-size: 1.2em;
+    }
+
+    .core-card p {
+        font-size: 1em;
+    }
+}
+
+
+@media screen and (max-width: 240px) {
+    .hero-heading {
+        font-size: 1.5em;
+    }
+
+    .hero-subheading {
+        font-size: 0.8em;
+    }
+
+    .hero-button {
+        font-size: 0.8em;
+        padding: 0.4em 0.8em;
+    }
+
+    .about-content h2 {
+        font-size: 1.5em;
+    }
+
+    .about-content p {
+        font-size: 0.9em;
+    }
+
+    .core-card h3 {
+        font-size: 1em;
+    }
+
+    .core-card p {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .hero-heading {
+        font-size: 4em;
+    }
+
+    .hero-subheading {
+        font-size: 1.8em;
+    }
+
+    .core-card {
+        width: 25%;
+    }
+
+    .core-card h3 {
+        font-size: 1.8em;
+    }
+
+    .core-card p {
+        font-size: 1.1em;
+    }
 }

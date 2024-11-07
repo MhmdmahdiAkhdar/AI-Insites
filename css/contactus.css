@@ -1,3 +1,4 @@
+/* Base Styles */
 #cont {
     text-align: center;
     font-size: 50px;
@@ -8,21 +9,23 @@
     margin-bottom: 3%;
 }
 
-#left {
-    float: left;
+#left,
+#right {
     width: 45%;
     margin: 0 2.5%;
+}
+
+#left {
+    float: left;
+}
+
+#right {
+    float: right;
 }
 
 small {
     color: red;
     font-size: x-large;
-}
-
-#right {
-    float: right;
-    width: 45%;
-    margin: 0 2.5%;
 }
 
 #btw {
@@ -111,8 +114,67 @@ textarea {
     border-radius: 5px;
     border: 1px solid #bbb;
     box-shadow: 1px 1px 1px black;
-    margin: 0 auto; 
+    margin: 0 auto;
     display: block;
+    align-content: center;
+}
+
+#rating legend {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#selectionn {
+    width: 100%;
+    padding: 8px;
+    color: #333;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    appearance: none;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+#selectionn:hover,
+#selectionn:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.1);
+    outline: none;
+}
+
+#rating small {
+    color: red;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+#rating legend {
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 6em;
+}
+
+#rating {
+    margin: 20px 0;
+    padding: 10px;
+    max-width: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
@@ -131,8 +193,8 @@ textarea {
     }
 
     #inp1 {
-        margin: 0;
-        width: 100%;
+        width: 50%;
+        
     }
 
     legend {
@@ -144,6 +206,12 @@ textarea {
         margin-right: auto;
         display: block;
         text-align: center;
+    }
+
+    #bot1 {
+        width: 20%;  
+        padding: 12px;
+        font-size: 1rem;
     }
 }
 
@@ -179,64 +247,61 @@ textarea {
     }
 }
 
-#rating {
-    margin: 20px 0;
-    padding: 10px;
-    max-width: 300px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#rating legend {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-#selectionn {
-    width: 100%;
-    padding: 8px;
-    color: #333;
-    background-color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    appearance: none;
-    cursor: pointer;
-    transition: 0.5s;
-    font-size: 100%;
-    align-items: center;
-    text-align: center;
-}
-
-#selectionn:hover,
-#selectionn:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.1);
-    outline: none;
-}
 
 
-#rating small {
-    color: #ff6347;
-    font-size: 0.9rem;
-    font-weight: normal;
-}
 
-#rating legend {
-    font-size: 1rem;
 
-    font-weight: normal;
-    padding: 8px 12px;
+@media (max-width: 480px) {
 
-    background-color: #f0f0f0;
-    border-radius: 4px;
-    display: inline-block;
-    max-width: 100%;
-    text-align: center;
-    margin: 0 auto;
-    margin-left: 6em;
+    #cont {
+        font-size: 30px;
+    }
 
+    #left,
+    #right {
+        float: none;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .dives {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #inp1 {
+        margin: 0;
+        width: 100%;
+    }
+
+    .submit-container {
+        font-size: 1rem;
+    }
+
+    #rating {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #selectionn {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1em;
+    }
+
+    .fulemail {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #maincont {
+        margin-left: 0;
+    }
+
+    #bot1 {
+        width: 30%;  
+        padding: 10px;
+        font-size: 0.8rem;
+    }
 }
