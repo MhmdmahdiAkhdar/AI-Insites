@@ -143,15 +143,15 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .hero-heading {
+    .headingg {
         font-size: 2.5em;
     }
 
-    .hero-subheading {
+    .subheading {
         font-size: 1.2em;
     }
 
-    .hero-button {
+    .buttonn {
         font-size: 1em;
         padding: 0.6em 1.2em;
     }
@@ -178,19 +178,19 @@
 }
 
 @media screen and (max-width: 768px) {
-    .hero-section {
+    .section1 {
         height: 70vh;
     }
 
-    .hero-heading {
+    .headingg {
         font-size: 2em;
     }
 
-    .hero-subheading {
+    .subheading {
         font-size: 1em;
     }
 
-    .hero-button {
+    .buttonn {
         font-size: 0.9em;
         padding: 0.5em 1em;
     }
@@ -221,15 +221,15 @@
 }
 
 @media screen and (max-width: 480px) {
-    .hero-heading {
+    .headingg {
         font-size: 1.8em;
     }
 
-    .hero-subheading {
+    .subheading {
         font-size: 1em;
     }
 
-    .hero-button {
+    .buttonn {
         font-size: 1em;
         padding: 0.5em 1em;
     }
@@ -253,15 +253,15 @@
 
 
 @media screen and (max-width: 240px) {
-    .hero-heading {
+    .headingg {
         font-size: 1.5em;
     }
 
-    .hero-subheading {
+    .subheading {
         font-size: 0.8em;
     }
 
-    .hero-button {
+    .buttonn {
         font-size: 0.8em;
         padding: 0.4em 0.8em;
     }
@@ -284,11 +284,11 @@
 }
 
 @media screen and (min-width: 1600px) {
-    .hero-heading {
+    .headingg {
         font-size: 4em;
     }
 
-    .hero-subheading {
+    .subheading {
         font-size: 1.8em;
     }
 
