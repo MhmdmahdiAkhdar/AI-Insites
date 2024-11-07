@@ -5,7 +5,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Global Styles */
 header, footer {
     background-color: #000;
     color: white;
@@ -150,6 +149,7 @@ footer .logo {
         position: absolute;
         left: -100%;
         top: 70px;
+        z-index: 100;
         gap: 0;
         flex-direction: column;
         background-color: #000;
