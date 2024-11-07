@@ -1,131 +1,125 @@
-/* Base Styles */
 #cont {
+    font-family: Markazi Text, serif;
     text-align: center;
-    font-size: 50px;
-    margin: 1em 0;
+    font-size: 4.5em;
+    margin: .3em 0;
 }
 
-#maincont {
-    margin-bottom: 3%;
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-#left,
-#right {
-    width: 45%;
-    margin: 0 2.5%;
-}
 
-#left {
-    float: left;
-}
 
-#right {
-    float: right;
+/* contact info */
+#contact-info {
+    width: 30%;
+    text-align: left;
+    height: fit-content;
 }
-
-small {
-    color: red;
-    font-size: x-large;
-}
-
-#btw {
-    overflow: hidden;
-}
-
 .dives {
-    margin: 0 auto;
     margin-bottom: 2em;
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
 }
-
-#im1 {
+.dives img {
     width: 100px;
     height: auto;
     float: left;
     cursor: pointer;
 }
-
-.bim {
-    font-size: x-large;
+.dives p {
+    font-size: 1.5em;
     font-weight: bolder;
     padding-top: 0;
     margin-left: 0;
 }
-
 #location {
     color: black;
 }
-
 #location:hover {
     color: blue;
 }
 
-.fieldss {
-    margin: 5%;
-    border: 1px solid #bbb;
-    box-shadow: 1px 1px 1px black;
-    border-radius: 5px;
-}
 
+/* form */
+#feedbackForm {
+    width: 50%;
+    height: fit-content;
+    background-color: #020522;
+    color: white;
+    border-radius: 25px;
+    padding: 1em 2.5em;
+}
+.form-row {
+    text-align: left;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+.form-row h3 {
+    margin-bottom: 5px;
+}
+.form-row input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px black;
+    display: block;
+    align-content: center;
+}
+small {
+    color: red;
+    font-size: x-large;
+}
 label {
     margin-left: 7%;
     margin-right: 5%;
     display: block;
     margin-bottom: 10px;
 }
-
-#inp1 {
-    margin: 0 auto;
-    width: 80%;
-}
-
-.submit-container {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: 100%;
-    font-weight: bolder;
-}
-
-#bot1 {
-    padding: 10px 20px;
-    font-size: 100%;
-    width: 10rem;
-    cursor: pointer;
-    border-radius: 25px;
-}
-
-#bot1:hover {
-    background-color: black;
-    color: white;
-    transition: 0.5s;
-}
-
 textarea {
     font-size: 100%;
     letter-spacing: 1px;
     padding: 10px;
-    max-width: 100%;
+    width: 100%;
     line-height: 1.5;
     border-radius: 5px;
     border: 1px solid #bbb;
     box-shadow: 1px 1px 1px black;
-    margin: 0 auto;
     display: block;
-    align-content: center;
 }
-
+#rating {
+    margin: 20px 9px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#rating small {
+    color: red;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
 #rating legend {
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 100%;
+    text-align: center;
     font-size: 1.1rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
 }
-
 #selectionn {
     width: 100%;
     padding: 8px;
@@ -140,168 +134,86 @@ textarea {
     align-items: center;
     text-align: center;
 }
-
 #selectionn:hover,
 #selectionn:focus {
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.1);
     outline: none;
 }
-
-#rating small {
-    color: red;
-    font-size: 0.9rem;
-    font-weight: normal;
-}
-
-#rating legend {
-    font-size: 1rem;
-    font-weight: normal;
-    padding: 8px 12px;
-    background-color: #f0f0f0;
-    border-radius: 4px;
-    display: inline-block;
-    max-width: 100%;
-    text-align: center;
+button[type="submit"] {
+    display: block;
+    width: fit-content;
     margin: 0 auto;
-    margin-left: 6em;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: 3px solid #007BFF;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #007BFF;
 }
 
-#rating {
-    margin: 20px 0;
-    padding: 10px;
-    max-width: 300px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+@media (max-width: 1024px) {
+    main {
+        flex-direction: column-reverse;
+        font-size: .9em;
+    }
+    #contact-info, #feedbackForm {
+        width: 90%;
+        margin: 30px auto;
+    }
+    #feedbackForm {
+        padding: 1em;
+    }
 }
+
+
 
 @media (max-width: 768px) {
-
-    #left,
-    #right {
-        float: none;
-        width: 100%;
-        margin: 0;
-        text-align: center;
-    }
-
     .dives {
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
-
-    #inp1 {
-        width: 50%;
-        
+    .dives img {
+        width: 80px;
     }
-
     legend {
         text-align: center;
     }
-
     select {
         margin-left: auto;
         margin-right: auto;
         display: block;
         text-align: center;
     }
-
-    #bot1 {
-        width: 20%;  
-        padding: 12px;
-        font-size: 1rem;
-    }
 }
-
-@media (max-width: 1920px) {
-    #feedbackForm {
-        margin-bottom: 4em;
-    }
-
-    .submit-container {
-        margin-top: 4em;
-    }
-
-    #rating {
-        margin-left: 10em;
-    }
-
-    #selectionn {
-        margin-left: 7em;
-        margin-top: 1em;
-    }
-
-    .fulemail {
-        margin-left: 8em;
-    }
-
-    #maincont {
-        margin-left: 4em;
-    }
-
-    .fullmail {
-        width: 250px;
-        height: 30px;
-    }
-}
-
 
 
 
 
 @media (max-width: 480px) {
-
     #cont {
         font-size: 30px;
     }
-
-    #left,
-    #right {
-        float: none;
-        width: 100%;
-        margin: 0;
-        text-align: center;
-    }
-
     .dives {
         flex-direction: column;
         align-items: center;
     }
-
-    #inp1 {
-        margin: 0;
-        width: 100%;
-    }
-
-    .submit-container {
-        font-size: 1rem;
-    }
-
     #rating {
         margin-left: 0;
         width: 100%;
     }
-
     #selectionn {
         width: 100%;
         margin-left: 0;
         margin-top: 1em;
-    }
-
-    .fulemail {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    #maincont {
-        margin-left: 0;
-    }
-
-    #bot1 {
-        width: 30%;  
-        padding: 10px;
-        font-size: 0.8rem;
     }
 }

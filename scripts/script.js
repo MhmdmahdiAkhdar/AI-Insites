@@ -57,3 +57,13 @@ document.addEventListener('click', function () {
         activeChapter = null;
     }
 });
+
+
+// Add event listener to toggle sidebar
+const sidebarToggle = document.getElementById('sidebar-toggle');
+const sidebar = document.getElementById('sidebar');
+
+sidebarToggle.addEventListener('click', function () {
+    sidebar.classList.toggle('active');
+    sidebarToggle.classList.toggle('active');
+});
