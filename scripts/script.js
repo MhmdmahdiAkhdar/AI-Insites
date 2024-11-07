@@ -17,20 +17,43 @@ document.addEventListener("click", (event) => {
     }
 });
 
-// Sidebar toggle functionality: When clicking on chapter title, it shows or hides the list of titles
+
 const chapterLinks = document.querySelectorAll('.sidebar-btn');
+let activeChapter = null;  // Track the currently active chapter
+
+// Function to toggle visibility
+function toggleChapter(chapterTitles) {
+    if (chapterTitles.style.display === 'block') {
+        chapterTitles.style.display = 'none';
+        activeChapter = null;
+    } else {
+        chapterTitles.style.display = 'block';
+        activeChapter = chapterTitles;
+    }
+}
 
 // Add event listener to each chapter button
 chapterLinks.forEach(link => {
-    link.addEventListener('click', function () {
-        const chapterId = this.innerText.toLowerCase().replace(' ', '');  // Get chapter ID (e.g., 'chapter1')
-        const chapterTitles = document.getElementById(`${chapterId}-titles`);  // Get the titles of the chapter
+    link.addEventListener('click', function (event) {
+        event.stopPropagation();  // Prevent triggering the document click event
 
-        // Toggle the visibility of the chapter titles list
-        if (chapterTitles.style.display === 'block') {
-            chapterTitles.style.display = 'none';  // Hide the titles
-        } else {
-            chapterTitles.style.display = 'block';  // Show the titles
+        const chapterId = this.innerText.toLowerCase().replace(' ', '');
+        const chapterTitles = document.getElementById(`${chapterId}-titles`);
+
+        // Hide any other active chapter
+        if (activeChapter && activeChapter !== chapterTitles) {
+            activeChapter.style.display = 'none';
         }
+
+        // Toggle the clicked chapter
+        toggleChapter(chapterTitles);
     });
+});
+
+// Add event listener to document to close active chapter when clicking outside
+document.addEventListener('click', function () {
+    if (activeChapter) {
+        activeChapter.style.display = 'none';
+        activeChapter = null;
+    }
 });
