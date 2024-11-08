@@ -98,19 +98,15 @@
     width: calc(80% - 260px);
     /* Adjust width to avoid overlap with the sidebar */
     margin-left: 400px;
-    /* Align video with content next to sidebar */
-    padding-top: 56.25%;
-    /* 16:9 Aspect Ratio */
     margin-top: 20px;
+    margin-bottom: 20px;
     /* Add space above the video */
 }
 
 .video-container iframe {
-    position: absolute;
     top: 0;
     left: 0;
     width: 70%;
-    height: 60%;
 }
 
 @media (max-width: 768px) {
@@ -137,4 +133,27 @@
     .video-container {
         margin-left: 100px;
     }
+}
+
+div img {
+    width: 60% !important;
+    height: 50% !important;
+}
+
+.main-lists li,
+.main-list2 li {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 2em;
+    list-style: decimal;
+
+}
+
+.main-list2 li {
+    list-style: circle;
+}
+
+.read-more {
+    margin-left: 4em;
+    font-size: medium;
 }
