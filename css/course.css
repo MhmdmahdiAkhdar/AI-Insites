@@ -11,14 +11,11 @@
     flex-direction: column;
     gap: 10px;
     height: calc(100vh - 100px - 60px);
-    /* Full height minus the header and footer heights */
     overflow-y: auto;
     z-index: 100;
     border-radius: 15px;
-    /* Added rounded corners */
 }
 
-/* Button for each chapter */
 .sidebar-btn {
     background-color: black;
     color: white;
@@ -30,15 +27,12 @@
     padding: 10px;
     transition: background-color 0.3s ease;
     border-radius: 10px;
-    /* Rounded corners for the button */
 }
 
 .sidebar-btn:hover {
     background-color: #0099cc;
-    /* Light blue hover */
 }
 
-/* Chapter list styling */
 .chapter-list {
     display: none;
     margin-top: 10px;
@@ -62,13 +56,10 @@
 
 .chapter-list ul li a:hover {
     color: lightblue;
-    /* Light blue color for chapter list hover */
 }
 
-/* Main content adjustment */
 .content {
     margin-left: 260px;
-    /* To push content to the right so it's not overlapped by the sidebar */
     padding: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -80,50 +71,51 @@
     text-align: left;
 }
 
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: calc(80% - 260px);
+    margin-left: 400px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    top: 0;
+    left: 0;
+}
 
+/* this is for the graph img in chapter 1 */
+div img {
+    margin: 10px 0;
+    width: 70% !important;
+    height: 60% !important;
+}
 
+.main-lists li,
+.main-list2 li {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 2em;
+    list-style: decimal;
 
-/* Responsive media query for smaller screens */
+}
+
+.main-list2 li {
+    list-style: circle;
+}
+
+.read-more {
+    margin-left: 4em;
+    font-size: medium;
+}
+
+#margin-bottom{
+    margin-bottom: 2%
+}
+
 @media (max-width: 768px) {
     .sidebar {
         /* display: none; */
         left: -100%;
     }
-
-}
-
-.video-container {
-    position: relative;
-    overflow: hidden;
-    width: calc(80% - 260px);
-    /* Adjust width to avoid overlap with the sidebar */
-    margin-left: 400px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    /* Add space above the video */
-}
-
-.video-container iframe {
-    top: 0;
-    left: 0;
-    width: 70%;
-}
-
-@media (max-width: 768px) {
-
-    .content,
-    .video-container {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .video-container {
-        margin-left: 100px;
-    }
-}
-
-@media (max-width: 769px) {
-
     .content,
     .video-container {
         margin-left: 0;
