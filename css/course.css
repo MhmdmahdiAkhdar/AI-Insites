@@ -1,19 +1,26 @@
+/* sidebar */
+main {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+header, header * {
+    z-index: 1;
+}
 .sidebar {
     position: fixed;
-    top: 100px;
-    /* Start the sidebar just below the header */
+    top: 0px;
     left: 0;
-    width: 250px;
+    width: 220px;
+    height: 100%;
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 140px 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: calc(100vh - 100px - 60px);
     overflow-y: auto;
-    z-index: 100;
-    border-radius: 15px;
+    z-index: 0;
 }
 
 .sidebar-btn {
@@ -58,9 +65,12 @@
     color: lightblue;
 }
 
+
+
+/* content */
 .content {
     margin-left: 260px;
-    padding: 20px;
+    padding: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
