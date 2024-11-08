@@ -69,6 +69,11 @@
     margin-top: 5px;
     font-size: larger;
     text-align: left;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    margin-bottom: 10px;
 }
 
 .video-container {
@@ -107,7 +112,7 @@ div img {
     font-size: medium;
 }
 
-#margin-bottom{
+#margin-bottom {
     margin-bottom: 2%
 }
 
@@ -116,6 +121,7 @@ div img {
         /* display: none; */
         left: -100%;
     }
+
     .content,
     .video-container {
         margin-left: 0;
