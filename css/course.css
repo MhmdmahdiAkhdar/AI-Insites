@@ -95,7 +95,8 @@ div img {
 }
 
 .main-lists li,
-.main-list2 li {
+.main-list2 li,
+.main-list3 li {
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 2em;
@@ -103,8 +104,14 @@ div img {
 
 }
 
-.main-list2 li {
+.main-list2 li,
+.main-list3 li {
     list-style: circle;
+}
+
+.main-list3 p {
+    font-size: small;
+    margin-left: 4em;
 }
 
 .read-more {
