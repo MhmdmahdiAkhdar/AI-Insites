@@ -168,7 +168,7 @@ img:hover{
     }
 
     .video-container {
-        width: 100%; /* Full width on mobile */
+        width: 90%; /* Full width on mobile */
         height: auto; /* Allow video to adjust height based on aspect ratio */
         margin: 0 auto;
         padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
