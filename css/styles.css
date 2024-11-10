@@ -211,5 +211,8 @@ footer .logo {
     footer a{
         align-items: normal;
     }
+    footer span{
+        margin-left: 8%;
+    }
 
 }
