@@ -1,6 +1,22 @@
+/* Adjust the content area to prevent collision with the sidebar */
+#header-test {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 1em;
+
+}
+
 .quiz-section {
     margin-left: 250px;
     padding: 20px;
+    background-color: gray;
+    color: white;
+    height: fit-content;
+    width: 60%;
+    border-radius: 25px;
+    margin-left: 25%;
+    margin-right: 15%;
 }
 
 .quiz-form {
@@ -66,8 +82,9 @@
         padding: 20px;
     }
 
-    .submit-btn, .retry-btn {
-        width: 30%; 
+    .submit-btn,
+    .retry-btn {
+        width: 30%;
         padding: 8px;
         font-size: 14px;
     }

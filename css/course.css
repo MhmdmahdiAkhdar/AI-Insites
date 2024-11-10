@@ -147,8 +147,11 @@ img:hover{
     font-size: medium;
 }
 
-#margin-bottom {
-    margin-bottom: 2%;
+.resources{
+    /* margin: 0 2px; */
+    background-color: gray;
+    text-align: center;
+    padding: 5px 0;
 }
 
 
