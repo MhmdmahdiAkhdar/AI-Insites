@@ -137,6 +137,11 @@ img:hover{
     margin-left: 4em;
 }
 
+#test {
+ color: white;
+ text-decoration: none;
+}
+
 .read-more {
     margin-left: 4em;
     font-size: medium;

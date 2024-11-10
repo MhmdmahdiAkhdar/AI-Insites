@@ -187,23 +187,9 @@ footer .logo {
         left: 0;
         padding-bottom: 30px;
     }
-
-    footer .logo {
-        width: 3em;
-        height: 3em;
-    }
 }
 
 @media (max-width: 480px) {
-    footer .logo {
-        width: 2em;
-        height: 2em;
-    }
-
-    footer .footer-t, footer .footer-p {
-        font-size: 0.8em;
-    }
-
     .nav-link {
         font-size: 1.2rem;
     }

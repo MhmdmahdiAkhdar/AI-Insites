@@ -44,6 +44,38 @@
 
 .incorrect-msg {
     font-size: 20px;
+    margin: 3px 2px;
     font-weight: bold;
     color: red;
+}
+
+
+/* Sidebar and content adjustments for tablets */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .quiz-section {
+        margin-left: 200px;
+    }
+
+    .nav-logo {
+        width: 80px;
+        height: auto;
+    }
+}
+
+/* For screens smaller than 768px (tablets and small devices) */
+@media (max-width: 768px) {
+    .quiz-section {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .submit-btn, .retry-btn {
+        width: 30%; 
+        padding: 8px;
+        font-size: 14px;
+    }
 }
