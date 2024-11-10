@@ -8,6 +8,8 @@
 }
 
 .quiz-section {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
     margin-left: 250px;
     padding: 20px;
     background-color: gray;
@@ -67,7 +69,8 @@
     }
 
     .quiz-section {
-        margin-left: 200px;
+        margin-left: 250px;
+        width: 60%;
     }
 
     .nav-logo {
@@ -78,9 +81,12 @@
 
 @media (max-width: 768px) {
     .quiz-section {
-        margin-left: 0;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
         padding: 20px;
     }
+
 
     .submit-btn,
     .retry-btn {
