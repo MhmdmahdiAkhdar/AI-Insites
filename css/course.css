@@ -173,18 +173,17 @@ img:hover{
     }
 
     .video-container {
-        width: 90%; /* Full width on mobile */
-        height: auto; /* Allow video to adjust height based on aspect ratio */
+        width: 90%; 
+        height: auto;
         margin: 0 auto;
-        padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
+        padding-top: 56.25%;
     }
 
     div img {
-        width: 90%; /* Make images smaller for mobile */
+        width: 90%;
         height: auto;
     }
 
-    /* Ensure graph image is readable */
     div.graph-image {
         width: 100%;
         height: auto;
@@ -193,7 +192,7 @@ img:hover{
 
     .content p,
     .content h2 {
-        font-size: 1rem; /* Adjust text size for readability */
+        font-size: 1rem
     }
 
     .sidebar-btn {
