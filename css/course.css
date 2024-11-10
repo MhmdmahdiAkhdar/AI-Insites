@@ -147,13 +147,6 @@ img:hover{
     font-size: medium;
 }
 
-.resources{
-    /* margin: 0 2px; */
-    background-color: gray;
-    text-align: center;
-    padding: 5px 0;
-}
-
 
 @media (max-width: 1024px) {
     .video-container {
