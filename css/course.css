@@ -5,7 +5,8 @@ main {
     padding: 0;
 }
 
-header, header * {
+header,
+header * {
     z-index: 1;
 }
 
@@ -69,7 +70,8 @@ header, header * {
 
 /* Content */
 .content {
-    margin-left: 260px; /* Offset for sidebar */
+    margin-left: 260px;
+    /* Offset for sidebar */
     padding: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -115,9 +117,10 @@ div img {
     transition: 0.1s;
 }
 
-img:hover{
+img:hover {
     scale: 1.01;
 }
+
 .main-lists li,
 .main-list2 li,
 .main-list3 li {
@@ -138,8 +141,8 @@ img:hover{
 }
 
 #test {
- color: white;
- text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 .read-more {
@@ -150,7 +153,6 @@ img:hover{
 
 @media (max-width: 1024px) {
     .video-container {
-        /* width: calc(100% - 240px); */
         width: 65%;
         height: 400px;
         margin-left: 30%;
@@ -159,7 +161,7 @@ img:hover{
 
 @media (max-width: 768px) {
     .sidebar {
-        left: -100%; 
+        left: -100%;
     }
 
     .content {
@@ -169,7 +171,7 @@ img:hover{
     }
 
     .video-container {
-        width: 90%; 
+        width: 90%;
         height: auto;
         margin: 0 auto;
         padding-top: 56.25%;
