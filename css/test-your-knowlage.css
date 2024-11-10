@@ -1,0 +1,49 @@
+/* Adjust the content area to prevent collision with the sidebar */
+.quiz-section {
+    margin-left: 250px;
+    /* Add space to avoid hitting the sidebar */
+    padding: 20px;
+}
+
+/* Additional styling for the quiz */
+.quiz-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Styling for the submit button */
+.submit-btn {
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-btn:disabled {
+    background-color: gray;
+}
+
+/* Styling for the retry button */
+.retry-btn {
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Styling for result messages */
+.correct-msg {
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}
+
+.incorrect-msg {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
