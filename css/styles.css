@@ -147,9 +147,7 @@ footer a:hover {
 }
 
 footer .footer-t,
-footer .footer-p,
 footer span ,
-.footer-s
 footer .logo {
     position: relative;
     margin: 0 auto;
@@ -210,4 +208,8 @@ footer .logo {
     .nav-menu {
         gap: 30px;
     }
+    footer a{
+        align-items: normal;
+    }
+
 }
