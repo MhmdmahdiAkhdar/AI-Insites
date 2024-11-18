@@ -83,6 +83,10 @@ h2{
 .text-content .btn:hover {
     background-color: #0056b3;
 }
+label input{
+    margin: 0 2%;
+    margin-top: 1.2%;
+}
 
 
 @media (max-width: 1024px) {
@@ -112,7 +116,7 @@ h2{
 
 @media (max-width: 768px) {
     h1,h2,h3{
-        margin-top: 5%;
+        margin-top: 7%;
     }
     .text-content {
         margin-left: 0; 
