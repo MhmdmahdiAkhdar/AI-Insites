@@ -1,110 +1,152 @@
-/* Adjust the content area to prevent collision with the sidebar */
-#header-test {
-    text-align: center;
-    font-size: xx-large;
-    font-weight: bold;
-    margin-bottom: 0.2em;
-    font-size: 5em;
-
+.text-content {
+    margin: 20px auto; 
+    margin-left: 240px; 
+    padding: 30px; 
+    background-color: white;
+    color: black; 
+    font-family: Arial, sans-serif; 
+    font-size: 2rem; 
+    line-height: 2; 
+    text-align: justify;
+    width: calc(100% - 260px); 
+    max-width: 1200px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
 }
 
-.quiz-section {
-    margin-top: 0.5em;
+.quiz-section{
+    /* text-align: center; */
+    font-size: larger;
+}
+.text-content p {
+    margin-bottom: 3em; 
+    font-weight: bold;  
+}
+
+.text-content h1, 
+.text-content h2, 
+.text-content h3 {
+    margin-top: 1.5em;
     margin-bottom: 0.5em;
-    padding: 20px;
-    background-color: gray;
-    color: white;
-    height: fit-content;
-    width: 70%;
-    border-radius: 25px;
-    margin-left: 20%;
-    margin-right: 15%;
+    font-weight: bolder;
 }
 
-.quiz-form {
-    max-width: 800px;
-    margin: 0 auto;
-    margin-bottom: 0.2em;
-
+.text-content h1 {
+    font-size: 3rem; /* Larger font for main headings */
+    border-bottom: 3px solid black; /* Emphasis with underline */
 }
 
-.quiz-form label {
-    font-size: x-large;
-
+.text-content h2 {
+    font-size: 2.5rem;
+    color: #333; /* Slightly lighter black for subheadings */
 }
 
-.quiz-form h2 {
-    font-size: xx-large;
-
+.text-content h3 {
+    font-size: 2rem;
 }
 
-.submit-btn {
+.submit-btn{
     background-color: green;
-    color: white;
-    font-size: 16px;
-    padding: 10px;
-    border: none;
-    margin-top: 0.5em;
-    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.9s;
 }
-
-.submit-btn:disabled {
-    background-color: gray;
-}
-
-.retry-btn {
-    background-color: orange;
-    color: white;
-    font-size: 16px;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-.correct-msg {
-    font-size: 20px;
-    font-weight: bold;
+.submit-btn:hover{
     color: green;
+    background-color: lightgreen;
 }
-
-.incorrect-msg {
-    font-size: 20px;
-    margin: 3px 2px;
-    font-weight: bold;
+.retry-btn{
+    background-color: red;
+    border: 2px solid transparent;
+    transition: 0.9s;
+}
+.retry-btn:hover{
     color: red;
+    background-color: lightcoral;
 }
 
+.retry-btn , .submit-btn {
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 1em;
+}
 
+.text-content .btn:hover {
+    background-color: #0056b3;
+}
 
+/* Responsive Adjustments */
 @media (max-width: 1024px) {
-    .sidebar {
-        width: 200px;
+    .text-content {
+        margin-left: 200px; /* Reduce margin for smaller navbar */
+        width: calc(100% - 220px); /* Adjust width dynamically */
+        padding: 25px; /* Adjust padding for smaller screens */
+        font-size: 1.4rem; /* Slightly smaller text */
     }
 
-    .quiz-section {
-        margin-left: 250px;
-        width: 60%;
+    .text-content h1 {
+        font-size: 2.5rem; /* Adjust heading size */
     }
 
-    .nav-logo {
-        width: 80px;
-        height: auto;
+    .text-content h2 {
+        font-size: 2rem;
+    }
+
+    .text-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .text-content p {
+        font-size: 1.3rem; /* Adjust text size */
     }
 }
 
 @media (max-width: 768px) {
-    .quiz-section {
-        margin-left: 10%;
-        margin-right: 10%;
-        width: 80%;
-        padding: 20px;
+    .text-content {
+        margin-left: 0; /* Remove left margin for mobile screens */
+        width: 100%; /* Full width */
+        padding: 20px; /* Adjust padding */
+        font-size: 1.3rem; /* Slightly smaller text */
     }
 
+    .text-content h1 {
+        font-size: 2rem; /* Adjust heading size */
+    }
 
-    .submit-btn,
-    .retry-btn {
-        width: 30%;
-        padding: 8px;
-        font-size: 14px;
+    .text-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .text-content h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-content {
+        font-size: 1.2rem; /* Smaller text for small devices */
+        line-height: 1.8; /* Slightly tighter spacing */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .text-content h1 {
+        font-size: 1.8rem; /* Smaller heading size */
+    }
+
+    .text-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .text-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .text-content p {
+        font-size: 1rem; /* Adjust paragraph size */
     }
 }
