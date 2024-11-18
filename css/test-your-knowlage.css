@@ -3,27 +3,39 @@
     text-align: center;
     font-size: xx-large;
     font-weight: bold;
-    margin-bottom: 1em;
+    margin-bottom: 0.2em;
+    font-size: 5em;
 
 }
 
 .quiz-section {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    margin-left: 250px;
     padding: 20px;
     background-color: gray;
     color: white;
     height: fit-content;
-    width: 60%;
+    width: 70%;
     border-radius: 25px;
-    margin-left: 25%;
+    margin-left: 20%;
     margin-right: 15%;
 }
 
 .quiz-form {
     max-width: 800px;
     margin: 0 auto;
+    margin-bottom: 0.2em;
+
+}
+
+.quiz-form label {
+    font-size: x-large;
+
+}
+
+.quiz-form h2 {
+    font-size: xx-large;
+
 }
 
 .submit-btn {
@@ -32,6 +44,7 @@
     font-size: 16px;
     padding: 10px;
     border: none;
+    margin-top: 0.5em;
     cursor: pointer;
 }
 

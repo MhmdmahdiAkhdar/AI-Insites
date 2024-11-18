@@ -22,7 +22,10 @@ header * {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    overflow-y: auto;
+    /* overflow-y: auto; */
+    overflow: hidden;
+    /* overflow-y: scroll; */
+    scrollbar-width: none;
     z-index: 0;
 }
 
@@ -109,12 +112,41 @@ header * {
     height: 100%;
 }
 
+
+
+
+
+.addedimgs {
+    float: right;
+    width: 37%;
+    margin-right: 2%;
+    margin-left: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+.left.div {
+    float: left;
+}
+
+#ai-rgirl {
+    width: 37%;
+    height: 35em;
+    float: right;
+}
+
+.newimg {
+    width: 60%;
+    margin-left: 25%;
+    margin-right: 15%;
+
+}
+
 div img {
     margin: 10px auto;
     width: 100%;
     height: auto;
     max-width: 700px;
-    transition: 0.1s;
+    transition: 1.5s;
 }
 
 img:hover {
@@ -157,11 +189,21 @@ img:hover {
         height: 400px;
         margin-left: 30%;
     }
+
+    img,
+    p {
+        display: row;
+    }
 }
 
 @media (max-width: 768px) {
     .sidebar {
         left: -100%;
+    }
+
+    #ai-rgirl {
+        width: 37%;
+        height: 20em;
     }
 
     .content {
@@ -178,14 +220,14 @@ img:hover {
     }
 
     div img {
-        width: 90%;
+        /* width: 90%; */
         height: auto;
     }
 
     div.graph-image {
         width: 100%;
         height: auto;
-        max-width: 90vw;
+        /* max-width: 90vw; */
     }
 
     .content p,
@@ -195,5 +237,12 @@ img:hover {
 
     .sidebar-btn {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #ai-rgirl {
+        width: 37%;
+        height: 20em;
     }
 }
