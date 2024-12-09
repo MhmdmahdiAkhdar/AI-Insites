@@ -47,14 +47,16 @@
 }
 
 #im1 {
-    display: block;        
-    margin-left: auto;     
-    margin-right: auto;    
-    max-width: 100%;       
-    height: auto;          
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
 }
 
-
+#ziko {
+    margin-bottom: 1em;
+}
 
 html,
 body {
@@ -70,6 +72,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
     #trh1,
     #trh2,
     .head,
@@ -80,7 +83,8 @@ body {
         margin-right: 5%;
     }
 
-    #trh1, #trh2 {
+    #trh1,
+    #trh2 {
         font-size: 1.5rem;
     }
 
@@ -97,11 +101,12 @@ body {
     }
 
     #contus {
-        width: 60%;
+        width: 35%;
     }
 }
 
 @media (max-width: 480px) {
+
     #trh1,
     #trh2,
     .head,
@@ -112,7 +117,8 @@ body {
         margin-right: 5%;
     }
 
-    #trh1, #trh2 {
+    #trh1,
+    #trh2 {
         font-size: 1.2rem;
     }
 
@@ -129,7 +135,7 @@ body {
     }
 
     #contus {
-        width: 45%;
+        width: 35%;
         margin: 1px 10%;
     }
 }
